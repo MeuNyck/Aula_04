@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva em Restaurante</title>
+</head>
+<body>
+<h1>Reserva em Restaurante</h1>
+
+<form>
+
+    <label>Nome:</label><br>
+    <input type="text" name="nome" placeholder="Digite seu nome" required><br><br>
+
+    <label>Sobrenome:</label><br>
+    <input type="text" name="sobrenome" placeholder="Digite seu sobrenome" required><br><br>
+
+    <label>E-mail:</label><br>
+    <input type="email" name="email" placeholder="Digite seu e-mail" required><br><br>
+
+    <label>Telefone:</label><br>
+    <input type="tel" name="telefone" required><br><br>
+
+    <label>Número de Pessoas:</label><br>
+    <input type="number" name="pessoas" required><br><br>
+
+    <label>Data da Reserva:</label><br>
+    <input type="date" name="data" required><br><br>
+
+    <label>Horário da Reserva:</label><br>
+    <input type="time" name="horario" required><br><br>
+
+    <label>Preferências Alimentares:</label><br>
+    <input type="checkbox" name="alimentacao" value="vegetariano"> Vegetariano
+    <input type="checkbox" name="alimentacao" value="vegano"> Vegano
+    <input type="checkbox" name="alimentacao" value="sem_gluten"> Sem glúten
+    <br><br>
+
+    <label>Restrições Alimentares:</label><br>
+    <input type="checkbox" name="restricao" value="lactose"> Intolerância à lactose
+    <input type="checkbox" name="restricao" value="gluten"> Glúten
+    <input type="checkbox" name="restricao" value="amendoim"> Amendoim
+    <br><br>
+
+    <label>Comentários Adicionais:</label><br>
+    <textarea name="comentarios" placeholder="Digite seus comentários"></textarea><br><br>
+
+    <label>Tipo de Evento:</label><br>
+    <select name="evento" required>
+        <option value="">Selecione</option>
+        <option value="aniversario">Aniversário</option>
+        <option value="casamento">Casamento</option>
+        <option value="reuniao">Reunião</option>
+        <option value="outro">Outro</option>
+    </select><br><br>
+
+    <label>Necessidades Especiais:</label><br>
+    <input type="checkbox" name="necessidade" value="cadeirante"> Acessibilidade
+    <input type="checkbox" name="necessidade" value="crianca"> Espaço para criança
+    <input type="checkbox" name="necessidade" value="outro"> Outra
+    <br><br>
+
+    <label>Preferência de Assento:</label><br>
+    <select name="assento" required>
+        <option value="">Selecione</option>
+        <option value="janela">Próximo à janela</option>
+        <option value="interno">Área interna</option>
+        <option value="externo">Área externa</option>
+    </select><br><br>
+
+    <label>Código Promocional:</label><br>
+    <input type="text" name="codigo" required><br><br>
+
+    <label>Aceitar Termos e Condições:</label><br>
+    <input type="checkbox" name="termos"> Aceito
+    <br><br>
+
+    <label>Receber Notificações:</label><br>
+    <input type="checkbox" name="notificacoes" required> Sim
+    <br><br>
+
+    <label>Cidade:</label><br>
+    <input type="text" name="cidade" placeholder="Digite sua cidade" required><br><br>
+
+    <label>CEP:</label><br>
+    <input type="text" name="cep" placeholder="Digite seu CEP" required><br><br>
+
+    <label>País:</label><br>
+    <select name="pais" required>
+        <option value="">Selecione</option>
+        <option value="brasil">Brasil</option>
+        <option value="argentina">Argentina</option>
+        <option value="portugal">Portugal</option>
+        <option value="outro">Outro</option>
+    </select><br><br>
+
+    <label>Referência:</label><br>
+    <input type="text" name="referencia" placeholder="Digite um ponto de referência"><br><br>
+
+    <input type="submit" value="Reservar">
+
+</form>
+
+</body>
+</html>

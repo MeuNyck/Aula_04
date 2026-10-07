@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitação de Orçamento</title>
+</head>
+<body>
+<h1>Solicitação de Orçamento</h1>
+
+<form>
+
+    <label>Nome:</label><br>
+    <input type="text" name="nome" placeholder="Digite seu nome" required><br><br>
+
+    <label>Empresa:</label><br>
+    <input type="text" name="empresa" placeholder="Digite o nome da empresa" required><br><br>
+
+    <label>E-mail:</label><br>
+    <input type="email" name="email" placeholder="Digite seu e-mail" required><br><br>
+
+    <label>Telefone:</label><br>
+    <input type="tel" name="telefone" required><br><br>
+
+    <label>Descrição do Projeto:</label><br>
+    <textarea name="descricao" placeholder="Descreva o projeto" required></textarea><br><br>
+
+    <label>Prazo de Entrega Desejado:</label><br>
+    <input type="date" name="prazo" required><br><br>
+
+    <label>Orçamento Disponível:</label><br>
+    <input type="number" name="orcamento" placeholder="Digite o orçamento" required><br><br>
+
+    <label>Local de Entrega:</label><br>
+    <input type="text" name="local" placeholder="Digite o local de entrega" required><br><br>
+
+    <label>Referência do Projeto Anterior:</label><br>
+    <textarea name="referencia" placeholder="Digite uma referência"></textarea><br><br>
+
+    <label>Preferência de Contato:</label><br>
+    <select name="contato" required>
+        <option value="">Selecione</option>
+        <option value="email">E-mail</option>
+        <option value="telefone">Telefone</option>
+        <option value="whatsapp">WhatsApp</option>
+    </select><br><br>
+
+    <label>Aceitar Termos e Condições:</label><br>
+    <input type="checkbox" name="termos" required> Aceito
+    <br><br>
+
+    <label>Receber Novidades por E-mail:</label><br>
+    <input type="checkbox" name="novidades"> Sim
+    <br><br>
+
+    <label>Nome do Responsável:</label><br>
+    <input type="text" name="responsavel" placeholder="Digite o nome do responsável" required><br><br>
+
+    <label>Cargo do Responsável:</label><br>
+    <input type="text" name="cargo" placeholder="Digite o cargo" required><br><br>
+
+    <label>Telefone do Responsável:</label><br>
+    <input type="tel" name="telefone_responsavel" required><br><br>
+
+    <label>Data de Início do Projeto:</label><br>
+    <input type="date" name="inicio" required><br><br>
+
+    <label>Número de Itens/Produtos:</label><br>
+    <input type="number" name="itens" required><br><br>
+
+    <label>Urgência:</label><br>
+    <select name="urgencia" required>
+        <option value="">Selecione</option>
+        <option value="baixa">Baixa</option>
+        <option value="media">Média</option>
+        <option value="alta">Alta</option>
+    </select><br><br>
+
+    <label>Setor da Empresa:</label><br>
+    <input type="text" name="setor" placeholder="Digite o setor da empresa" required><br><br>
+
+    <label>Método de Pagamento Preferido:</label><br>
+    <select name="pagamento" required>
+        <option value="">Selecione</option>
+        <option value="pix">PIX</option>
+        <option value="cartao">Cartão</option>
+        <option value="boleto">Boleto</option>
+    </select><br><br>
+
+    <input type="submit" value="Solicitar Orçamento">
+
+</form>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscrição em Evento</title>
+</head>
+<body>
+<h1>Inscrição em Evento</h1>
+
+<form>
+
+    <label>Nome:</label><br>
+    <input type="text" name="nome" placeholder="Digite seu nome" required><br><br>
+
+    <label>E-mail:</label><br>
+    <input type="email" name="email" placeholder="Digite seu e-mail" required><br><br>
+
+    <label>Telefone:</label><br>
+    <input type="tel" name="telefone" required><br><br>
+
+    <label>Cargo:</label><br>
+    <input type="text" name="cargo" required><br><br>
+
+    <label>Empresa:</label><br>
+    <input type="text" name="empresa" required><br><br>
+
+    <label>Data do Evento:</label><br>
+    <input type="date" name="data" required><br><br>
+
+    <label>Horário de Chegada:</label><br>
+    <input type="time" name="horario" required><br><br>
+
+    <label>Alimentação Preferida:</label><br>
+    <select name="alimentacao" required>
+        <option value="">Selecione</option>
+        <option value="normal">Normal</option>
+        <option value="vegetariana">Vegetariana</option>
+        <option value="vegana">Vegana</option>
+    </select><br><br>
+
+    <label>Restrições Alimentares:</label><br>
+    <input type="checkbox" name="restricao" value="lactose"> Lactose
+    <input type="checkbox" name="restricao" value="gluten"> Glúten
+    <input type="checkbox" name="restricao" value="outra"> Outra
+    <br><br>
+
+    <label>Necessidades Especiais:</label><br>
+    <input type="checkbox" name="necessidade" value="acessibilidade"> Acessibilidade
+    <input type="checkbox" name="necessidade" value="outra"> Outra
+    <br><br>
+
+    <label>Aceitar Política de Privacidade:</label><br>
+    <input type="checkbox" name="privacidade" required> Aceito
+    <br><br>
+
+    <label>Receber Atualizações sobre o Evento:</label><br>
+    <input type="checkbox" name="atualizacoes"> Sim
+    <br><br>
+
+    <label>Nome do Acompanhante:</label><br>
+    <input type="text" name="acompanhante" placeholder="Nome do acompanhante"><br><br>
+
+    <label>E-mail do Acompanhante:</label><br>
+    <input type="email" name="email_acompanhante" placeholder="E-mail do acompanhante"><br><br>
+
+    <label>Telefone do Acompanhante:</label><br>
+    <input type="tel" name="telefone_acompanhante"><br><br>
+
+    <label>Data de Nascimento:</label><br>
+    <input type="date" name="nascimento" required><br><br>
+
+    <label>Empresa do Acompanhante:</label><br>
+    <input type="text" name="empresa_acompanhante"><br><br>
+
+    <label>Cargo do Acompanhante:</label><br>
+    <input type="text" name="cargo_acompanhante"><br><br>
+
+    <label>Preferência de Assento:</label><br>
+    <select name="assento" required>
+        <option value="">Selecione</option>
+        <option value="frente">Frente</option>
+        <option value="meio">Meio</option>
+        <option value="fundo">Fundo</option>
+    </select><br><br>
+
+    <label>Outras Informações Relevantes:</label><br>
+    <textarea name="informacoes" placeholder="Digite outras informações"></textarea><br><br>
+
+    <input type="submit" value="Inscrever-se">
+
+</form>
+</body>
+</html>
